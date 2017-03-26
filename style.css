@@ -166,6 +166,10 @@ p.title {
 	margin: 5px 35px 0 15px;
 }
 
+.row.coupon {
+	margin-top: -5px;
+}
+
 .coupon .col-12 {
 	display: flex;
 	flex-direction: row-reverse;
@@ -182,6 +186,65 @@ p.title {
 	border-radius: 5px;
 	background-color: #f0f9ff;
 	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.summary-price {
+	width: 202px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #61bdfe;
+}
+
+.summary-price span{
+	font-size: 14px;
+}
+
+.summary-price.last {
+	font-size: 24px;
+	color: #424e56;
+}
+
+.summary-price.first,
+.summary-price.last {
+	padding: 11px 22px 0 0;
+}
+
+.summary-price.second {
+	padding: 1px 22px 0 0;
+}
+
+.text-price {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #424e56;
+}
+
+.text-price span {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.text-price.first {
+	padding: 16px 0 0 0;
+}
+
+.text-price.second {
+	padding: 5px 0 0 0;
+}
+
+.text-price.last {
+	padding: 22px 0 0 0;
 }
 
 .underline {
@@ -219,6 +282,10 @@ p.title {
 
 .return .return-summ {
 	font-weight: 600;
+}
+
+span.return-summ {
+	padding-left: 12px;
 }
 
 .return .currency {
@@ -296,7 +363,7 @@ button:hover,
 	background-color: #ffffff;
 	border: solid 1px #e5e5e5;
 	position: absolute;
-	bottom: -22px;
+	bottom: -20px;
 	width: 276px;
 	left: -1px;
 	padding: 0;
@@ -325,10 +392,6 @@ button:hover,
 }
 
 .card-block {
-	/* display: flex; */
-	/* justify-content: center; */
-	/* flex-direction: column; */
-	/* align-items: center; */
 	padding: 19px 20px 0;
 }
 
@@ -354,7 +417,7 @@ button:hover,
 	color: #424e56;
 	margin-bottom: 0;
 	position: absolute;
-	bottom: 33px;
+	bottom: 34px;
 	left: 18px;
 }
 
@@ -426,6 +489,7 @@ h4.card-title {
 }
 
 .back-shoping {
+	margin-top: -4px;
 	width: 276px;
 	height: 45px;
 	border-radius: 100px;
@@ -481,9 +545,17 @@ td img {
 	margin: 5px 5px 5px 0;
 }
 
-td.name, th.name {
+td img.frst {
+	margin: 28px 5px 5px 0;
+}
+
+td.name.frst {
 	padding-top: 29px;
-	width: 292px;
+}
+
+td.name, th.name {
+	padding-top: 6px;
+	width: 228px;
 	font-size: 12px;
 	font-weight: 600;
 	font-style: normal;
@@ -491,6 +563,10 @@ td.name, th.name {
 	line-height: 1.4;
 	letter-spacing: normal;
 	color: #32aaff;
+}
+
+th.trash img {
+	margin-right: 6px;
 }
 
 .name span {
@@ -528,6 +604,7 @@ table td {
 }
 
 .trash {
+	width: 228px;
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;
@@ -542,13 +619,94 @@ table td {
 	text-align: right;
 }
 
-th.price-cart,
+td.price-cart.frst {
+	padding-top: 15px;
+}
+
 td.price-cart {
-	width: 161px;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #424e56;
+}
+
+td.price-cart span {
+	font-size: 14px;
+}
+
+.price-cart {
+	width: 162px;
 }
 
 .count-cart {
-	width: 116px;
+	width: 127px;
+}
+
+.count {
+	float: right;
+	display: block;
+	text-align: center;
+	width: 67px;
+	height: 33px;
+	border-radius: 25px;
+	line-height: 33px;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+}
+
+.discount-cart {
+	width: 171px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #bbbbbb;
+}
+
+tr td:nth-child(3) {
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #bbbbbb;
+}
+
+td.frst {
+	padding-top: 20px;
+}
+
+.discount-cart span{
+	font-size: 14px;
+}
+
+td.discount-cart.frst {
+	padding-top: 15px;
+}
+
+.club-price-cart {
+	width: 207px;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #424e56;
+}
+
+.club-price-cart span{
+	font-size: 14px;
 }
 
 @media (min-width: 1200px){
